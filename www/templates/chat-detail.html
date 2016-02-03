@@ -1,0 +1,61 @@
+<ion-view view-title="{{chat.Name}}">
+  <ion-content class="padding">
+
+  <div class="w3-image w3-center">
+    <img src="{{chat.Img}}" style="width:50%" alt="Dr">
+  </div>
+<div class="w3-half">
+
+   <div class="w3-card-4 w3-margin-top" style="width:100%;">
+             
+            <header class="w3-container w3-teal" style="padding-bottom: 5px; padding-top: 5px;">
+              <h4 style="color:#FFF; text-align: center; font-size: 20px">Get Appointment</h4>
+            </header>
+              <div class="w3-container item-text-wrap ">
+               <form name="form" >
+                <br>  
+                <label>
+  Select Time
+<select class="ion-input-select" ng-model="user.apptime">
+  
+   <option selected ng-repeat="time in chat.availabletime" >{{time.time}}</option>
+</select>
+</label>
+
+
+<a class="w3-btn w3-teal w3-right w3-margin-top" ng-click="gettime()">&nbsp;&nbsp;&nbsp;Get&nbsp;&nbsp;&nbsp;</a>
+</form>
+    <div>
+    </div>        
+            
+                </div>
+                  <br>
+           
+            </div> 
+      
+            <div class="w3-card-8 w3-margin-top" >
+  <ul class="w3-ul">
+    
+  <!--  <li>
+      <h5><b>Name </b></h5> <h5>{{chat.Name}}</h5>
+    </li>-->
+    <li>
+      <h5><b>Specialty </b></h5><h5> {{chat.Specialty}}</h5>
+    </li>
+    <li>
+      <h5><b>  Current Position</b></h5><h5> {{chat.position}}</h5>
+    </li>
+  </ul>
+
+
+</div>
+
+<!--<a class="button button-full button-positive"  type="item-text-wrap" >Get Appointment
+</a>-->
+
+<br><br>
+</div>
+
+
+  </ion-content>
+</ion-view>

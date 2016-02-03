@@ -1,0 +1,33 @@
+<ion-view view-title="Your Appointment">
+  <ion-content class="has-header">
+
+  <ion-list >
+            <ion-item>
+
+
+             <div class="w3-card-4" style="width:100%;">
+             
+            <header class="w3-container w3-teal" style="padding-bottom: 5px; padding-top: 5px;" >
+              <h2 style="color:#FFF; text-align: center">Appointment Details </h2>
+            </header>
+             <div class="w3-container item-text-wrap w3-margin-top" >
+             <ol>
+                 <li><font color="brown" size="4"><b>Doctor AvailableTime</b> </font> <br>{{appointment.apptime}}</li><br>
+                  <li><font color="brown" size="4"><b>Date</b></font> <br>{{appointment.date | date}} </li>
+
+                   <li><font color="brown" size="4"><b>Doctor</b></font> <br>{{appointment.doc}} </li>
+                </ol>
+
+            
+                </div>
+                  <br>
+            </div> 
+            <br><br>       
+            </ion-item>
+
+        </ion-list>
+    
+
+        
+    </ion-content>
+</ion-view>

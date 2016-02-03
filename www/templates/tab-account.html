@@ -1,0 +1,68 @@
+<ion-view view-title="DoctorIn">
+   <ion-content class="has-header padding">
+    <!--      <header class="w3-container  w3-padding w3-margin-top" style="color:#fff !important;background-color:#009788 !important" id="myHeader" >
+ 	<div class="w3-center">
+ 	<h3 style="color:#FFF; font-family:Times New Roman Bold Italic;">Your Feedback</h3>
+ 	
+  </div>
+</header>-->
+<form  name="form">
+ <div class="w3-card-4" style="width:100%;">
+             
+            <header class="w3-container w3-teal" style="padding-bottom: 5px; padding-top: 5px;">
+              <h2 style="color:#FFF; text-align: center; font-size: 20px">Enter Your Feedback</h2>
+            </header>
+
+                <div class="w3-container item-text-wrap">
+                 <div class="w3-group">      
+
+    <textarea class="w3-input" style="width:90%"  ng-model="user.feedback" ></textarea>
+   
+  </div>
+
+
+
+<!--<a class="w3-btn w3-teal" ng-click="sendMsg()">Submit</a>-->
+<a class="button  button-small w3-teal" ng-click="feedback()" href="#/tab/dash"> Submit</a>
+<br><br>
+                </div>
+            </div> 
+        </form>
+    
+<!--<div class="w3-container w3-card-8   w3-light-grey w3-margin-top">
+
+            <header class="w3-container w3-teal" style="padding-bottom: 5px; padding-top: 5px;">
+              <h2 style="color:#FFF; text-align: center; font-size: 20px">Enter Your Feedback</h2>
+            </header>
+  <div class="w3-group">      
+
+    <textarea class="w3-input" style="width:90%" required  ng-model="feedback" ng-keydown="addMessage($event)"></textarea>
+   
+  </div>
+
+
+<button class="button  button-block w3-teal" ng-click="sendMsg()"> <h5 style="color:white; font-family:georgia">Submit</h5></button>
+
+<br><br>
+
+</div>-->
+
+<!--<div class="w3-card-8  w3-light-grey w3-margin-top" style="width:100%">
+<div class=" w3-container  w3-margin-top ">
+
+ 
+    <label class="item item-input item-floating-label">
+    <span class="input-label" style="color:brown; size=3px;"><b>Enter Your Feedback</b></span>
+    <input type="textarea" placeholder="Enter Your Feedback">
+  </label>
+   
+
+
+<button class="button  button-block w3-teal" ng-click="sendMsg()"> <h5 style="color:white; font-family:georgia">Book Now</h5></button>
+</div>
+</div>-->
+
+<br><br><br><br>
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,21 @@
+<ion-view view-title="Category">
+  <ion-content>
+   
+          <div class="list list-inset">
+            <label class="item item-input">
+              <i class="icon ion-search placeholder-icon"></i>
+              <input type="text" placeholder="Search here..." ng-model="search">
+            </label>
+          </div>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats| orderBy:sortType:sortReverse | filter:search" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+        <img ng-src="{{chat.Img}}">
+        <h2>{{chat.Name}}</h2>
+        <p>{{chat.Specialty}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

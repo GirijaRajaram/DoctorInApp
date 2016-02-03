@@ -1,0 +1,28 @@
+<ion-view view-title="DoctorIn" >
+  <ion-content class="has-header">
+    <div class="item item-image">
+    <img src="img/Doctor.jpg"  height="200" width="100">
+  </div>
+        <ion-list  ng-repeat=" item in aboutPage">
+            <ion-item>
+
+             <div class="w3-card-4" style="width:100%;">
+             
+            <header class="w3-container w3-teal" style="padding-bottom: 5px; padding-top: 5px;">
+              <h2 style="color:#FFF; text-align: center; font-size: 30px">{{item.title}}</h2>
+            </header>
+              <div class="w3-container item-text-wrap w3-margin-top" ng-repeat=" data in item.subcontent">
+            
+                <ol><li>{{data.data}}</li></ol>
+            
+                </div>
+                  <br>
+          
+            </div> 
+            <br><br>
+                  
+            </ion-item>
+
+        </ion-list>
+    </ion-content>
+</ion-view>
